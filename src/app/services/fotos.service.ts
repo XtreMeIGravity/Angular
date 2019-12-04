@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Foto } from "../models/Foto";
 @Injectable({
   providedIn: 'root'
 })
-export class fotosService {
+export class FotosService {
   constructor(private http: HttpClient) { }
   getPhotos(){
-    return this.http.get('https://jsonplaceholder.typicode.com/photos?_limit=10');
+    return this.http.get<Foto[]>('https://jsonplaceholder.typicode.com/photos?_limit=10');
   }
 }

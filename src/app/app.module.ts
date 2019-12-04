@@ -7,9 +7,10 @@ import { Componente1Component } from './componentes/componente1/componente1.comp
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule} from './material.module';
+import { FotosComponent } from './componentes/fotos/fotos.component';
 
 @NgModule({
-  declarations: [AppComponent, Componente1Component],
+  declarations: [AppComponent, Componente1Component, FotosComponent],
   imports: [
     BrowserModule, 
     BrowserAnimationsModule,

@@ -1,19 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { fotosService } from "./services/fotos.service";
+import { FotosService } from "./services/fotos.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  constructor( public fotosService:fotosService){
-  }
-  ngOnInit(){
-    this.fotosService.getPhotos().subscribe(
-      photos => console.log(photos),
-      err => console.log(err)
-    )
-  }
+export class AppComponent  {
+  albumsId=[1,2,3]
+
+
+  constructor(public fotosService: FotosService) {}
   public title = 'Hola :D  ';
 }

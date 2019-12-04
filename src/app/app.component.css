@@ -284,3 +284,14 @@
       visibility: hidden;
     }
   }
+  
+  mat-card{
+    margin: auto;
+    display: block;
+    margin-top: 2rem;
+    width: 35%;
+  }
+  main{
+    text-align: center;
+  }
+  

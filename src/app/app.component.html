@@ -16,6 +16,32 @@
 
   <button mat-raised-button>Hola</button>
 </div>
+<main>
+  <mat-card>
+    <form action="">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Title" #Title>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Album Id" #AlbumId>
+          <mat-option *ngFor="let id of albumsId" value="id">
+            {{id}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="text" placeholder="URL" #url>
+      </mat-form-field>
+      <button mat-flat-button style="display:block;width: 100%;" color='primary'>
+        search
+      </button>
+    </form>
+  </mat-card>
+
+  <app-fotos></app-fotos>
+
+</main>
 
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
