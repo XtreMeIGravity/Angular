@@ -1,9 +1,9 @@
 <mat-card *ngFor="let  Foto of photos">
     <mat-card-subtitle>
-        {{foto.title}}
+        {{Foto.title}}
     </mat-card-subtitle>
-    <img [src]="photo.thumbnail" mat-card-image>
+    <img [src]="Foto.thumbnailUrl" mat-card-image>
     <mat-card-content>
-        <p> Album Id:{{photo.albumid}}</p>
+        <p> Album Id:{{Foto.albumId}}</p>
     </mat-card-content>
 </mat-card>

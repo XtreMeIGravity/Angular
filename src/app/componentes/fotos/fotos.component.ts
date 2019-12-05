@@ -9,7 +9,7 @@ import { Foto } from 'src/app/models/Foto';
   styleUrls: ['./fotos.component.css']
 })
 export class FotosComponent implements OnInit {
-  photos: Foto[] = [];
+  photos: any[] = [];
 
   constructor(public fotosService: FotosService) { }
 
