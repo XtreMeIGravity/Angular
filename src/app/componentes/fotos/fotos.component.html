@@ -6,4 +6,8 @@
     <mat-card-content>
         <p> Album Id:{{Foto.albumId}}</p>
     </mat-card-content>
+    <mat-card-actions>
+        <a mat-button mat-raised-button [href]="Foto.url" target="_blank">Ver imagen</a>
+        <button mat-button mat-flat-button color="primary" (click)="click()">Hola</button>
+    </mat-card-actions>
 </mat-card>

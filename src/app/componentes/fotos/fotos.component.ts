@@ -23,4 +23,7 @@ export class FotosComponent implements OnInit {
         err => console.log(err)
       )
   }
+  click(): void {
+    alert("Funciona");
+  }
 }

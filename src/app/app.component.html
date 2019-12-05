@@ -9,7 +9,10 @@
 
 <main>
   <mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>
+    <mat-drawer mode="side" closed>
+
+    </mat-drawer>
+    <mat-drawer-content>
       <mat-card>
         <form action="">
           <mat-form-field>
@@ -25,13 +28,11 @@
           <mat-form-field>
             <input matInput type="text" placeholder="URL" #url>
           </mat-form-field>
-          <button mat-flat-button style="display:block;width: 100%;" color='primary'>
+          <button mat-flat-button style="display:block;width: 100%;" color="primary">
             search
           </button>
         </form>
       </mat-card>
-    </mat-drawer>
-    <mat-drawer-content>
       <app-fotos></app-fotos>
     </mat-drawer-content>
   </mat-drawer-container>
